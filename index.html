@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Dindaaa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide1">
+      <h1>Happy Birthday, Dindaku Sayangg</h1>
+      <img src="Stiker1.gif" alt="Sticker 1" class="gif">
+      <p>Semoga slalu diberi kesehatan yaaa... 🎉🎂</p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2">
+      <h1>Selamat Ulang Tahun!</h1>
+      <img src="Stiker2.gif" alt="Sticker 2" class="gif">
+      <p>Semoga kedepannya semua yang kamu impikan terkabul semuaa🥳💖</p>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3">
+      <h1>Give Me Your Love Forever</h1>
+      <img src="Stiker3.gif" alt="Sticker 3" class="gif">
+      <p>Semogaa kedepannya bisa ngasih kiss yang lebih banyak ke pacar kamuu yang manis inii ahaha😙🎈</p>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" id="slide4">
+      <h1>Kiss Online Duyuuu</h1>
+      <img src="Stiker4.gif" alt="Sticker 4" class="gif">
+      <p>Muahhh</p>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" id="slide5">
+      <h1>Selamat Menua</h1>
+      <h1>(づ๑•ᴗ•๑)づ♡</h1>
+      <img src="Stiker5.gif" alt="Sticker 5" class="gif">
+      <p>Udah gede jadii gabolee tambah nakall yaaa...</p>
+      <p>no noooo</p>
+    </div>
+
+    <!-- Next Button -->
+    <button id="nextBtn" class="cute-btn">Next</button>
+  </div>
+
+  <!-- Popup for the final slide -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Kirim Pesan ke Pacarmu yang Ganteng Ini💌</h2>
+      <textarea id="message" placeholder="Tulis pesan di sini..."></textarea>
+      <button id="sendBtn" class="cute-btn">Kirim Pesan</button>
+    </div>
+  </div>
+  <!-- Tambahkan div untuk popup alert khusus -->
+  <div class="popup" id="emptyMessagePopup">
+    <div class="popup-content">
+      <h2>Ups! Pesannya masih kosong 😅</h2>
+      <p class="black-text">Tulis sesuatu yang manis dulu yaa... 💌</p>
+      <button id="closePopupBtn" class="cute-btn">Oke, deh!</button>
+    </div>
+  </div>
+
+  <audio autoplay loop id="autoPlay">
+    <source src="musik.mp3" type="audio/mpeg">
+  </audio>
+  <div class="audio-container">
+    <p class="audio-warning">🎉 Play musiknya sendiri yaa🎶</p>
+    <audio controls>
+      <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

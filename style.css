@@ -1,0 +1,165 @@
+/* Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffecb3;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #ff6f61;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    position: relative;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .black-text {
+    color: black;
+  }
+  
+  
+  p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .gif {
+    max-width: 200px;
+    margin: 20px 0;
+  }
+  
+  .cute-btn {
+    background-color: #ffecd2;
+    color: #ff6f61;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  .cute-btn:hover {
+    background-color: #f0a5a5;
+    transform: scale(1.1);
+  }
+  
+  .slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff0f0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff6f61;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .popup h2 {
+    color: #ff6f61;
+  }
+  
+  .popup textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff6f61;
+    resize: none;
+    font-size: 1rem;
+  }
+  
+  .popup textarea:focus {
+    outline: none;
+    border-color: #ff6f61;
+  }
+  
+  .popup .cute-btn {
+    margin-top: 15px;
+  }
+  
+  audio #autoPlay {
+    display: none;
+  }
+  
+  .audio-container {
+    background-color: #ff6f61;
+    /* Warna cerah untuk suasana ulang tahun */
+    padding: 20px;
+    border-radius: 15px;
+    /* Garis putus-putus yang lucu */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: -15px;
+  }
+  
+  .audio-warning {
+    font-size: 1.2rem;
+    /* Ukuran font yang lebih besar */
+    color: #fff;
+    /* Warna merah cerah untuk menonjolkan pesan */
+    font-weight: bold;
+    /* Menebalkan teks */
+    margin-bottom: 15px;
+    animation: bounce 1s infinite;
+    /* Animasi bouncing pada teks */
+  }
+  
+  @keyframes bounce {
+  
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  audio {
+    width: 100%;
+    /* Agar audio control memenuhi lebar container */
+    border-radius: 10px;
+    /* Menambahkan sudut melengkung */
+    margin-top: 10px;
+    border: 2px solid #ff6f61;
+    /* Border yang menyenangkan */
+    background-color: #ffccbc;
+    /* Warna latar belakang untuk kontrol audio */
+  }
